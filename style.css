@@ -1,0 +1,61 @@
+
+body {
+  /* OLD: background-image: url('You died.jpeg'); */
+  background-image: url('spirited away ~ ghibli collage ~ desktop wallpaper.jpeg'); /* Specifies the new image file */
+  background-size: cover; /* This scales the background image to cover the entire container */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center center; /* Centers the image on the screen */
+  font-family: Arial, sans-serif; /* Example: Add some basic font styling */
+  display: flex; /* Centers the content vertically and horizontally */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensures the body takes at least the full viewport height */
+  margin: 0; /* Removes default body margin */
+  color: #333; /* Example: Changed text color for readability with the new background */
+  /* You might need to adjust text-shadow or remove it depending on the new background */
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); /* Example: Lighter text shadow */
+}
+
+/* Keep the rest of your styles for .container, h1, #timer, .buttons, #status as they are,
+   or adjust them as needed to fit the new background aesthetic. */
+
+.container {
+  background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white background for the timer content */
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Adjust shadow for lighter background */
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+#timer {
+  font-size: 5em;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.buttons button {
+  background-color: #a0522d; /* Example button color, perhaps earthy tones */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #8b4513; /* Darker hover color */
+}
+
+#status {
+  margin-top: 20px;
+  font-size: 1.5em;
+  font-style: italic;
+}
