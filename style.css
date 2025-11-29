@@ -1,30 +1,38 @@
-
 body {
-  /* OLD: background-image: url('You died.jpeg'); */
-  background-image: url('spirited away ~ ghibli collage ~ desktop wallpaper.jpeg'); /* Specifies the new image file */
-  background-size: cover; /* This scales the background image to cover the entire container */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  background-position: center center; /* Centers the image on the screen */
-  font-family: Arial, sans-serif; /* Example: Add some basic font styling */
-  display: flex; /* Centers the content vertically and horizontally */
+ 
+  font-family: Arial, sans-serif; 
+  display: flex; 
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Ensures the body takes at least the full viewport height */
-  margin: 0; /* Removes default body margin */
-  color: #333; /* Example: Changed text color for readability with the new background */
-  /* You might need to adjust text-shadow or remove it depending on the new background */
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); /* Example: Lighter text shadow */
+  min-height: 100vh; 
+  margin: 0; 
+  color: #333; 
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+  
+ 
+  overflow: hidden; 
 }
 
-/* Keep the rest of your styles for .container, h1, #timer, .buttons, #status as they are,
-   or adjust them as needed to fit the new background aesthetic. */
+#bg-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; 
+  object-fit: cover; 
+}
 
 .container {
-  background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white background for the timer content */
+  position: relative;
+  z-index: 1;
+
+  background-color: rgba(255, 255, 255, 0.7); 
+  backdrop-filter: blur(5px); 
   padding: 30px;
   border-radius: 10px;
   text-align: center;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Adjust shadow for lighter background */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
 }
 
 h1 {
@@ -39,7 +47,7 @@ h1 {
 }
 
 .buttons button {
-  background-color: #a0522d; /* Example button color, perhaps earthy tones */
+  background-color: #a0522d; 
   color: white;
   padding: 10px 20px;
   border: none;
@@ -51,7 +59,7 @@ h1 {
 }
 
 .buttons button:hover {
-  background-color: #8b4513; /* Darker hover color */
+  background-color: #8b4513; 
 }
 
 #status {
@@ -59,6 +67,7 @@ h1 {
   font-size: 1.5em;
   font-style: italic;
 }
+
 .todo-container {
   margin-top: 30px;
   background-color: #fff5e6;
