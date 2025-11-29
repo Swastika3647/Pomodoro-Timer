@@ -5,10 +5,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <video autoplay muted loop id="bg-video">
+    <source src="background.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
   <audio id="ghibli-bgm" loop autoplay>
     <source src="ghibli_music.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
+
   <div class="container">
     <h1>Pomodoro Timer</h1>
     <div id="timer">25:00</div>
@@ -28,7 +33,6 @@
       <button onclick="addTask()">Add</button>
       <ul id="taskList"></ul>
     </div>
-    
     
     <p id="status">Work Time</p>
   </div>
