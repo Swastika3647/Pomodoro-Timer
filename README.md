@@ -4,7 +4,7 @@ A cozy, web-based productivity timer inspired by the visuals of **Studio Ghibli*
 
 🔗 **[Live Demo](https://swastika3647.github.io/Pomodoro-Timer/)**
 
-![Project Screenshot](Screenshot%202025-12-08%20at%209.55.24%20PM.jpg)
+![Project Screenshot](file:///var/folders/j2/s5zjb1ns5gvfnj5ddkzr07sw0000gn/T/TemporaryItems/NSIRD_screencaptureui_sq4elo/Screenshot%202025-12-09%20at%2012.08.25%E2%80%AFPM.png)
 *(Replace this link with the actual path to your screenshot in the repo)*
 
 ## ✨ Features
