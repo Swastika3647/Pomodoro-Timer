@@ -20,21 +20,23 @@
     <div class="buttons">
       <button id="start">Start</button>
       <button id="stop">Stop</button>
-      <button id="reset">Reset</button>
+      <button id="reset">Reset</button> 
     </div>
     <div class="stats">
       <p>Pomodoros Today: <span id="todayCount">0</span></p>
       <p>Streak: <span id="streakCount">0</span> days</p>
-      <p>Weekly Focus Time: <span id="weeklyMinutes">0</span> min</p>
+      <p>Weekly Focus Time: <span id="weeklyMinutes">0</span> min</p>. 
     </div>
-    <div class="todo-container">
-      <h3>📝 Tasks</h3>
-      <input type="text" id="taskInput" placeholder="Add a task..." />
-      <button onclick="addTask()">Add</button>
-      <ul id="taskList"></ul>
-    </div>
-    
-    <p id="status">Work Time</p>
+   <div class="todo-container">
+  <h3>📝 Tasks</h3>
+  <div class="autocomplete-container">
+    <input type="text" id="taskInput" placeholder="What is your focus task?" autocomplete="off">
+    <ul id="suggestionsList" class="suggestions-list"></ul>
+</div>
+  <button id="addBtn" class="primary-btn">Add Task</button>
+</div>
+
+<p id="status">Work Time</p>
   </div>
   <script src="script.js"></script>
 </body>
